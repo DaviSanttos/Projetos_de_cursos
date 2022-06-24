@@ -1,0 +1,33 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97,97,115,1) 35%, rgba(0,212,255,1) 100%);
+}
+button{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 rgb(179, 35, 35);
+    padding: 1em;
+    margin-left: 40px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+button:hover{
+    border: none;
+    box-shadow:rgb(209, 40, 40);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(226,23,13,1) 50%, rgba(252,176,69,1) 100%);;
+}
+button:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+div{
+    margin-left: 35%;
+}
+#imagem{
+    margin-left: 530px;
+}

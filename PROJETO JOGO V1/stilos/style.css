@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    width: 100%; 
+    height: 100vh;
+    overflow: hidden; /* corte de elementos , para barra de rolagem nao ser exibida */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* ALINHAMENTO DE ITENS */
+}
+
+.banner video{
+    position: fixed; /* conteudo com posição fixa */
+    top: 50px;
+    left: 0;
+    object-fit: cover; /* O conteúdo substituído é dimensionado para manter sua proporção e preencher toda a caixa de conteúdo do elemento: seu tamanho de objeto concreto é resolvido como uma restrição de capa contra a largura e a altura usadas do elemento. */
+    width: 100%;
+}
+
+.banner .content{ /* estiliza o elemento chamando o elemento pai prmeiro assim, seguindo a hierarquia*/
+    position: relative; 
+    top: 200px;
+    z-index: 1; /* */
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.banner .content p{ 
+    margin: 0;
+    padding: 0;
+    font-size: 1em; 
+    text-transform: uppercase; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+input{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(69, 50, 155);
+    width: 150px;
+    height: 40px;
+    background-color: rgb(52, 31, 148);
+    text-transform: uppercase;
+    color: white;
+}
+input:hover{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(52, 31, 148);
+    transition: 0.2s; 
+    width: 160px;
+    height: 45px;
+    background: rgb(4,0,36);
+background: linear-gradient(90deg, rgba(4,0,36,1) 0%, rgba(69,32,133,1) 57%, rgba(125,60,181,1) 100%);
+    text-transform: uppercase;
+    color: white;
+}
+
+a{
+    color: #fff;
+    text-decoration: none; /* tira a decoração do texto */
+    transition: 0.3s; /* tempo de troca*/
+}
+
+a:hover{
+    opacity: 0.7; /* opacidade */
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* */
+}
+
+.menu{
+    align-items: center; /* alinha verticalmente ao centro */
+    display: flex;
+    justify-content: space-around; /* o espaço ao redor  seja a metade do espaço entre eles*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 57%, rgba(7,5,136,1) 100%);
+    height: 10vh; /* unidade responsiva, q se adpata */
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2; /* */
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    z-index: 7; /**/
+    border-radius: 10px;
+}
+
+.nav-list li{
+    letter-spacing: 3px; /* espaçamento entre caracteres de texto */
+    margin-left: 32px;
+    z-index: 7;
+}
+
+.menu2{
+    display: none;
+    cursor: pointer;
+    z-index: 7;
+} 
+
+.menu2 div{ /* */
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.4s;
+    z-index: 7;
+}
+
+body{
+    overflow-x: hidden; /*  se algo transborda fica escondido do body*/
+}
+
+.nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 30vw; /* responsivo */
+    height: 92vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 57%, rgba(7,5,136,1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%); /* muda o posicionamento do eixo X*/
+    transition: transform 0.3s ease-in; /* transiçao suave*/
+    z-index: 7;
+}
+
+.nav-list li{
+    margin-left: 0;
+    opacity: 0;
+    z-index: 7;
+}
+
+.menu2{
+    display: block;
+}
+
+.nav-list.active{ /* quando nav lis estiver ativo*/
+    transform: translateX(0);
+}
+
+
+@keyframes navLinkFade{ /* animçao de opacidade e transaçao da esquerda para direita*/
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+

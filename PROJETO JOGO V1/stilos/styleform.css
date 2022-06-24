@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    color: white;
+}
+
+form{
+    margin: 0 auto;
+    width: 320px;
+    border: solid 5px;
+    border-radius: 5px;
+    border-style: groove;
+    background-color: rgb(192, 201, 255);
+}
+
+form div + div{
+    /* Adiciona um espaçp entre cada conjunto */
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+div{
+    padding-left: 18%;
+}
+
+input{
+    margin-top: 10px;
+    cursor: pointer; 
+    border-radius: 5px;
+    border-color: rgb(52, 31, 148);
+    width: 150px;
+    height: 40px;
+    background-color: rgb(52, 31, 148);
+    text-transform: uppercase;
+    color: white;
+}
+
+input:hover{
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(52, 31, 148);
+    transition: 0.2s; /* Tempo de troca de posição */
+    width: 160px;
+    height: 45px;
+    background-color: rgb(52, 31, 148);
+    text-transform: uppercase;
+    color: white;
+}
