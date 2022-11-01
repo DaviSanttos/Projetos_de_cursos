@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida dos 30 segundos</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
+    <style>
+
+        h2{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .painel{
+            position: absolute;
+            top: 50px;
+            left: 42%;
+            width: 300px;
+            height: 400px;
+            border: 10px dashed rgb(255, 255, 255);
+            background: rgb(2,0,36);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg,rgba(253,187,45,1)  0%, rgba(34,193,195,1) 100%);;
+        }
+
+        .painel2{
+            position: absolute;
+            top: 50px;
+            left: 42%;
+            width: 300px;
+            height: 400px;
+            border: 10px dashed rgb(255, 255, 255);
+            background: rgb(2,0,36);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg,rgba(253,187,45,1)  0%, rgba(34,193,195,1) 100%);
+        }
+
+        .ganhador .tf1{
+            margin-left: 85px;
+        }
+
+        .perdedor .tf2{
+            margin-left: 85px;
+        }
+
+        .ganhador{
+            margin-left: 10px;
+            display: flex;
+        }
+
+        .perdedor{
+            margin-left: 10px;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="sinal">
+        <div class="p1" style="background-color:red;"></div>
+        <div class="p2" style="background-color:red;"></div>
+        <div class="p3" style="background-color:red;"></div>
+    </div>
+    <div class="pista"><img src="pistadecorrida.jpg"></div>
+
+    <div class="car"><img src="img/carroverdesprite-export.gif" width="70px" height="120px"></div>
+
+    <div class="car2"><img src="img/carrovermelhodesprite.gif" width="70px" height="120px"></div>
+
+    <div class="bandeira">
+        <img src="img/bandeira (1).png" width="250px" height="250px">
+    </div>
+
+    <div class="bandeira2">
+        <img src="img/bandeira (1).png" width="250px" height="250px">
+    </div>
+
+    <div class="jogadores">
+        <div class="j1"><img src="img/jogador-verde-removebg-preview.png"></div>
+        <div class="j2"><img src="img/jogador-vermelho-removebg-preview.png"></div>
+    </div>
+
+    <main class="tela-principal">
+        
+        <section class="conteudos">
+
+        <article class="centro" id="instrucoes">
+            Corrida do Conhecimento
+        </article>
+
+        <article class="questoes">
+
+            <header class="questao">
+                <span id="numQuestao"></span>
+                <h2 id="pergunta"></h2>
+            </header>
+
+            <div class="corpo">
+                <ol type="A" id="alternativas">
+                    <li id="a" value="1A" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                    <hr>
+                    <li id="b" value="1B" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                    <hr>
+                    <li id="c" value="1C" class="respostas" onclick="verificarSeAcertou(this, this)"></li>
+                </ol>
+            </div>
+        </article>
+        <article id="aviso">Questão <span id="numero"></span> de <span id="total"></span></article>
+        </section>
+    </main>
+    <div class="painel">
+        <h2>Ranking</h2>
+        <div class="ganhador">
+            <img src="img/jogador-verde-removebg-preview.png" width="100px" height="100px">
+            <div class="tf1"><img src="img/primeiro-removebg-preview.png" width="300px" height="200px"></div>
+        </div>
+        <div class="perdedor">
+            <img src="img/jogador-vermelho-removebg-preview.png" width="100px" height="100px">
+            <div class="tf2"><img src="img/segundo-removebg-preview.png" width="300px" height="200px"></div>
+        </div>
+    </div>
+
+    <div class="painel2">
+        <h2>Ranking</h2>
+        <div class="ganhador">
+            <img src="img/jogador-vermelho-removebg-preview.png" width="100px" height="100px">
+            <div class="tf1"><img src="img/primeiro-removebg-preview.png" width="300px" height="200px"></div>
+        </div>
+        <div class="perdedor">
+            <img src="img/jogador-verde-removebg-preview.png" width="100px" height="100px">
+            <div class="tf2"><img src="img/segundo-removebg-preview.png" width="300px" height="200px"></div>
+        </div>
+    </div>
+</body>
+</html>
