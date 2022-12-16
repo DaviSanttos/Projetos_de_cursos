@@ -1,0 +1,21 @@
+body{
+    background-image: url(../arquivos-necessarios-projetos-unes/fundo2.png);
+}
+
+header{
+    margin: auto;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+main{
+    font-size: 20px;
+    width: 900px;
+    margin: auto;
+}
+
+.direitos{
+    text-align: center;
+}
