@@ -1,0 +1,167 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: hsl(30, 38%, 92%);
+}
+
+#container{
+    display: flex;
+    width: 450px;
+    margin: auto;
+    vertical-align: middle;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: 100%;
+}
+
+#caixa{
+    display: flex;
+}
+
+.direita{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 15px 15px 0;
+    width: 225px;
+    height: 337.5px;
+}
+
+.esquerda {
+    width: 225px;
+    height: 337.5px;
+}
+
+img{
+    border-radius: 15px 0 0 15px;
+}
+
+/* textos */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.google.com/specimen/Montserrat');
+  }
+
+  @font-face {
+    font-family: 'Fraunces';
+    src: url('https://fonts.google.com/specimen/Fraunces');
+  }
+
+p {
+    font-size: 11px;
+    font-family: 'Fraunces', serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 14pt;
+    font-weight: 700;
+}
+
+.p1 {
+    line-height: normal;
+    padding-top: 15px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 0px;
+    line-height: 22pt;
+    font-family: 'Fraunces', Helvetica, sans-serif;
+}
+
+.textos{
+    width: 74%;
+    margin-left: 25px;
+}
+
+#preco-atual{
+    /* color: hsl(212, 21%, 14%);
+    color: hsl(228, 12%, 48%); */
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#preco-antigo {
+    margin-left: 5px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+#comprar {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    background: hsl(158, 36%, 37%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    line-height: 35px;
+    text-align: center;
+}
+
+#topo-fone{
+    display: none;
+}
+
+#comprar img {
+    margin-right: 10px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+
+@media (max-width: 600px)
+{
+
+#topo-fone{
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#caixa {
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 375px;
+    height: 100vh;
+}
+
+.esquerda, .direita {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.esquerda {
+    height: 50%;
+}
+
+.direita {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#caixa {
+    display: block;
+}
+
+#topo{
+    display: none;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
