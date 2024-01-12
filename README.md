@@ -1,3 +1,3 @@
 # PROJETOS
 
-Projetos estáticos
+Projetos estáticos, basta baixar e abrir o arquivo html
